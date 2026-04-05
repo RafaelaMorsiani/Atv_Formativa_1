@@ -38,4 +38,4 @@ def buscar_cotacao():
         print("Erro:", e)
 
 if __name__ == "__main__":
-    buscar_cotacao()
+    buscar_cotacao() 
