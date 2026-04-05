@@ -21,7 +21,6 @@ def buscar_cotacao():
         pen = data["rates"]["PEN"]  # Peruvian Sol
         print(f"1 USD = S/. {pen:.2f}")
 
-
         #Conversion input - USD to BRL
         valor = float(input("Digite um valor em USD para conversão à BRL: "))
         print(f"Convertido: R$ {valor * cotacao:.2f}")
@@ -38,4 +37,4 @@ def buscar_cotacao():
         print("Erro:", e)
 
 if __name__ == "__main__":
-    buscar_cotacao() 
+    buscar_cotacao()
