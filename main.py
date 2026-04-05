@@ -11,6 +11,9 @@ def buscar_cotacao():
 
         print(f"1 USD = R$ {cotacao:.2f}")
 
+        eur = data["rates"]["EUR"]
+        print(f"1 USD = € {eur:.2f}")
+
     except Exception as e:
         print("Erro:", e)
 
