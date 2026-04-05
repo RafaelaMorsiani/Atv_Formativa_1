@@ -17,6 +17,16 @@ def buscar_cotacao():
         eur = data["rates"]["EUR"]
         print(f"1 USD = € {eur:.2f}")
 
+        #Conversion input - USD to BRL
+        valor = float(input("Digite um valor em USD para conversão à BRL: "))
+        print(f"Convertido: R$ {valor * cotacao:.2f}")
+
+        #Conversion input - USD to EUR
+        valor = float(input("Digite um valor em USD para conversão à EUR: "))
+        print(f"Convertido: EUR {valor * eur:.2f}")
+
+
+
     except Exception as e:
         print("Erro:", e)
 
