@@ -28,3 +28,18 @@ jobs:
       - name: Run script
         run: |
           python main.py
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      -
+       name: Check out repository code
+       uses: actions/checkout@v5
+        # Add support for more platforms with QEMU (optional)
+        # https://github.com/docker/setup-qemu-action
+      -
+       name: Set up QEMU
+       uses: docker/setup-qemu-action@v4
+      -
+        name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4

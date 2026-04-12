@@ -38,3 +38,4 @@ def buscar_cotacao():
 
 if __name__ == "__main__":
     buscar_cotacao()
+                                                                                                                                                                                            
