@@ -1,4 +1,4 @@
-name: Discord 
+name: Discord integration
 on:
   - push
 
